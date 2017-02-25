@@ -1,7 +1,8 @@
 # Sudoku-Solver
 
 A program to solve Sudoku puzzles without brute force. Uses boolean multidimensional lists.
-Note : When giving input for x,y , note that origin is (0,0) and not (1,1) as tradiotionally referred to by Sudoku solvers.
+
+Note : When giving input for x,y , note that origin is (0,0) and not (1,1) as traditionally referred to by Sudoku solvers.
 Method of approach :
 - boolean list stores 'True' for possibility of a value existing at a given space.
 
