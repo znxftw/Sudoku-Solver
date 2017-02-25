@@ -9,7 +9,7 @@ def parseInit():
 #Sum up the truth values for all elements
 def checkCompletion():
     return int(sum(sum(sum(j) for j in i) for i in boolGrid))
-
+#Filter out non-zero elements and call unTrueRest()
 def filterPresent():
     for i in range(9):
         for j in range(9):
@@ -49,4 +49,30 @@ parseInit()
 while(checkCompletion()>81):
 	filterPresent()
 	eval()
+	if checkCompletion()==temp :
+		backupBool=boolGrid
+		for i in range(9):
+			for j in range(9):
+				t=sum(x for x in boolGrid[i][j])
+				if t!=1 :
+					for k in range(9):
+						flag=0
+						if boolGrid[i][j][k]==True:
+							Grid[i][j]=k+1
+							while(checkCompletion()>81):
+								filterPresent()
+								eval()
+								if t1==checkCompletion():
+									flag=1
+									break
+								t1=checkCompletion()
+							if flag==1 :
+								boolGrid=backupBool
+						if checkCompletion()==81 :
+							break
+				if checkCompletion()==81:
+					break
+			if checkCompletion()==81:
+				break
+	temp=checkCompletion()
 printSudoku()
