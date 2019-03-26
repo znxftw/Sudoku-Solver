@@ -12,3 +12,6 @@ Method of approach :
   - If no elimination possible, assume a value at a grid and reattempt solving
  
 I've tested out the program on multiple easy/medium/hard puzzles and they all worked out. Kindly let me know if it doesn't on a certain one.
+
+
+### UPDATE : I think I forgot to commit the working version. sigh. Lost the code. Will fix the repo soon.
